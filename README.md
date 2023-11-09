@@ -4,6 +4,30 @@ AtomHabitTracker is an application for tracking and managing habits and tasks. T
 
 ## Installation
 
+### Using Docker
+
+Make sure you have Docker and Docker Compose installed on your machine.
+1. Clone the repository:
+https://github.com/rusanov8/AtomHabitsTracker.git
+
+
+2. Navigate to the project directory: 
+  ```
+  cd AtomHabitsTracker
+  ```
+
+
+3. Build and run the Docker containers:
+ ```
+docker-compose up --build
+```
+
+
+4. Access AtomHabitTracker in your web browser at http://localhost:8000/.
+
+
+### Without Docker
+
 Before using AtomHabitTracker, make sure you have Python 3.6+ and [virtualenv](https://pypi.org/project/virtualenv) installed. Follow these steps:
 
 1. Clone the repository:
@@ -11,12 +35,15 @@ https://github.com/rusanov8/AtomHabitsTracker.git
 
 
 2. Navigate to the project directory: 
-cd atom-habit-tracker
+  ```
+  cd AtomHabitsTracker
+  ```
 
 
 3. Create a virtual environment:
+```
 virtualenv venv
-
+```
 
 4. Activate the virtual environment:
 
@@ -38,16 +65,20 @@ virtualenv venv
   ```
 
 6. Apply migrations:
+```
 python manage.py migrate
-
+```
 
 7. Start the application:
+```
 python manage.py runserver
-
+```
 
 8. You can now open AtomHabitTracker in your web browser at `http://127.0.0.1:8000/`.
 
-## Running the AtomHabitTracker Telegram Bot
+
+
+### Running the AtomHabitTracker Telegram Bot
 
 To run the AtomHabitTracker Telegram bot used for habit management, follow these steps:
 
